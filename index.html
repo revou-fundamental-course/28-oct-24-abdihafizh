@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kalkulator BMI by Abdi Hafizh</title>
+        <link rel="stylesheet" href="css\style.css">
+        <script src="js\script.js"></script>
+        <style>body {background-image: url(assets/wallpaper.jpg);background-repeat: no-repeat;background-size: 1920px 1080px;}</style>
+    </head> 
+    <body>        
+        <!-- Bagian 1 : Form Kalkulator BMI -->
+        <div class="container">
+            <div class="card">
+                <h2>Kalkulator Body Mass Index (BMI)</h2>
+                <article>
+                    <p>Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu? Yuk, hitung sekarang di Kalkulator BMI.</p>
+                </article>                
+                <br>                 
+                <label for="gender">Jenis Kelamin:</label>
+                <select id="gender">
+                    <option value="">-- Pilih Jenis Kelamin --</option>
+                    <option value="Pria">Pria</option>
+                    <option value="Wanita">Wanita</option>
+                </select>
+                <br>
+                <label for="berat">Berat Badan (kg):</label>
+                <input type="number" id="berat" placeholder="Masukkan Berat Badan (kg)" required>
+                <br>
+                <label for="umur">Umur (tahun):</label>
+                <input type="number" id="umur" placeholder="Masukkan Umur (tahun)" required>
+                <br>
+                <label for="tinggi">Tinggi Badan (cm):</label>
+                <input type="number" id="tinggi" placeholder="Masukkan Tinggi Badan (cm)" required>                
+                <button class="calculate-btn" onclick="hitungBMI()">Hitung BMI</button>
+                <button class="reset-btn" onclick="reset()">Reset</button>
+                <br><br>
+                <article>
+                    <p>
+                        Keunggulan Fitur: 
+                        <br>&#x2022; Menghitung berat badan
+                        <br>&#x2022; Menentukan kategori berat badan ideal atau tidak
+                    </p>
+                    <p>Kalkulator ini hanya dapat digunakan oleh orang dewasa (wanita hamil atau menyusui tidak dapat mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
+                    <p>Kalkulator akan memberi Anda gambaran tentang perbandingan berat badan Anda dengan nilai umum. Body Mass Index (BMI) atau Indeks Massa Tubuh dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter).</p>
+                </article>
+            </div>
+        <!-- Bagian 2 : Hasil Kalkulasi BMI -->
+            <div class="card">
+                <h2>Hasil Kalkulasi BMI</h2>
+                <div id="hasil" class="hasil">Masukkan Data Anda Sesuai Kolom Kalkulator BMI.</div>
+                <br><br><br><br><br><br><br><br><br>
+                <div id="nilai" class="nilai"></div>
+                <div id="keterangan" class="keterangan"></div>
+            </div>
+        </div>
+        <!-- Bagian Footer -->
+        <footer>
+            <div class="bottom-bar">
+                <p>Made by Abdi Hafizh @ RevoU Fundamental Course: Software Engineering</p>
+            </div>
+        </footer>
+    </body>    
+ </html>

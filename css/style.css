@@ -1,0 +1,116 @@
+/* konfigurasi CSS */
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+    flex-direction: column;
+  }
+  .container {
+    display: flex;
+    gap: 20px;
+  }
+  .card {
+    width: 900px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .card h2 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: center;
+  }
+
+  .card article {
+    text-align: justify;
+    background-color: rgb(119, 212, 212, 0.7);
+    padding-left: 8px;
+    padding-top: 1px;
+    padding-right: 8px;
+    padding-bottom: 1px;
+    border-radius: 8px;
+  }
+  .card input, .card select {
+      width: 97%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 16px;
+  }
+  .card input {
+    width: 94%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  .card button {  
+    width: 30%;
+    padding: 10px;
+    margin: 20px;
+    margin-left: 100px;
+    font-size: 16px;
+    border:#d1d1d1;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;    
+  }
+  .calculate-btn {
+    background: rgba(0, 255, 0);
+    color: #fff;
+  }
+  .calculate-btn:hover {
+    background: #0d5e0d;
+  }
+  .reset-btn {
+    background: rgba(255, 0, 0);
+    color: #fff;
+  }
+  .reset-btn:hover {
+    background: #5f0b13;
+  }
+  .hasil {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+  }
+  .nilai {
+    font-size: 150px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  .keterangan {
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+  }
+  footer {
+    align-self: auto;
+    padding: 10px;
+  }
+
+  .bottom-bar{
+    background: #d1d1d1;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    border-radius: 8px;
+  }
+
+  .bottom-bar p{
+    color: #000000f6;
+    margin: 0;
+    font-size: 16px;
+    padding: 7px;
+  }
